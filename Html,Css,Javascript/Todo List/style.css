@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.todo-list {
+    position: absolute;
+    margin: auto;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    width: min(95vw, 31rem);
+    top: 3rem;
+}
+
+.todo-list h1 {
+    text-align: center;
+    color: #8160db;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    padding: 2rem 2.5rem;
+    background-color: rgb(0, 0, 33);
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+    border-radius: 0.8rem;
+}
+
+#wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1rem;
+}
+
+#wrapper input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border: 0.1rem solid #8160db;
+    padding: 1rem 0.5rem;
+}
+
+#wrapper button {
+    position: relative;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #8160db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.8s;
+}
+
+#wrapper button:hover{
+    opacity: 0.7;
+}
+
+#tasks {
+    margin: 2rem auto 1rem auto;
+    padding-right: 1.2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    position: relative;
+    max-height: 20.5rem;
+    overflow-y: auto;
+}
+
+.task {
+    background-color: white;
+    padding: 0.8rem 1rem;
+    display: grid;
+    color: black;
+    grid-template-columns: 1fr 8fr 2fr 2fr;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+.task:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.task span {
+    font: 0.9rem;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.task button {
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: #3dae3b;
+    transition: opacity 0.8s;
+}
+
+.edit:hover{
+    opacity: 0.7;
+}
+
+.delete {
+    background-color: #FF2E63;
+    transition: opacity 0.8s;
+}
+
+.delete:hover{
+    opacity: 0.7;
+}
+
+#pending-tasks{
+    text-align: center;
+}
+
+#pending-tasks span {
+    color: #8160db;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #E84545;
+}
+
+#error {
+    text-align: center;
+    color: red;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+    border-radius: 0.7rem;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #837979;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #ccc;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 518px) {
+
+    body{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+
+    .todo-list {
+        width: 90vw;
+    }
+
+    #wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    #wrapper input {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #wrapper button {
+        width: 50%;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+
+    input[type="checkbox"] {
+        width: auto;
+        height: auto;
+        margin:auto 0.3rem 1rem auto;
+    }
+    
+    .task{
+        display: block;
+    }
+
+    .task button{
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#7F7FD5, #91EAE4);
+}
+
+.calculator{
+    
+    position: relative;
+    max-width: 21rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem 2rem 2rem;
+    background: #252A34;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    outline: 1rem solid #444850;
+}
+
+h4{
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 1.7rem;
+    margin-bottom: -1.9rem;
+    color:#7F7FD5;
+}
+
+.display{
+    height: 5.1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin: 50px 0;
+    font-size: 40px;
+    color: #111;
+    pointer-events: none;
+}
+
+input{
+    border-radius: 9px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.8rem;
+}
+
+.buttons button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(#dcdbdb , #a4a3a3);
+}
+
+.buttons button:hover{
+    transition: 0.5s;
+    background: linear-gradient(#9b9b9b, #e8e8e8);
+}
+
+.buttons button:active{
+    transition: scale(0.99);
+}
+
+button.btn-opr{
+    background: linear-gradient(#d2ffff, #0694c6);
+}
+
+button.btn-opr:hover{
+    background: linear-gradient(#0694c6,#d2ffff);
+}
+
+button.eqn{
+    color: white;
+    background: linear-gradient(#0F3443, #34E89E);
+    grid-column: 3/5;
+}
+
+button.eqn:hover{
+    background: linear-gradient(#34E89E, #0F3443);
+}

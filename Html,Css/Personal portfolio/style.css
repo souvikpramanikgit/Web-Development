@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 81.5%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 10rem 10%;
+    min-height: 100vh;
+}
+
+hr {
+    border-color: #bebbf1;
+    margin: 1rem 17rem;
+}
+
+/* Header section */
+
+header {
+    background-color: rgb(44 44 80 / 80%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.menu-bar a {
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+    transition: 0.4s ease;
+}
+
+.menu-bar a:hover {
+    color: #9376E0;
+}
+
+/* Home section */
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-bio h3 {
+    font-size: 2.5rem;
+}
+
+.span-color {
+    color: #9376E0;
+}
+
+.home-bio h1 {
+    font-size: 3.5rem;
+    line-height: 1.4;
+}
+
+.home-bio p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.home-img img {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.about-button {
+    display: inline-block;
+    background-color: #8160db;
+    color: white;
+    border: 0.2rem solid #8160db;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    margin-right: 1rem;
+    transition: background-color 0.37s;
+}
+
+.about-button:hover {
+    background-color: rgb(0, 0, 33);
+}
+
+.project-button {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    border: 0.2rem solid #8160db;
+    font-size: 1.3rem;
+    border-radius: 8px 0;
+    cursor: pointer;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.37s;
+}
+
+.project-button:hover {
+    background-color: #8160db;
+}
+
+/* About Section */
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-section h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 3.6rem 0;
+}
+
+.about-section h4 {
+    font-size: 1.3rem;
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 85%;
+    border-radius: 50%;
+    border: 0.2rem solid #9376E0;
+}
+
+.about-section p {
+    line-height: 2.1;
+    font-size: 1.4rem;
+}
+
+/* Skills Section */
+
+.skills-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills-section h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.skills-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 15rem;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skill-card:hover {
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+}
+
+.skill-card .fa-brands {
+    font-size: 7rem;
+    transition: 0.4s ease;
+}
+
+.skill-card .fa-brands:hover {
+    color: #9376E0;
+}
+
+.skill-card h3 {
+    font-size: 2.1rem;
+}
+
+/* Project Section */
+
+.proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.project-section h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.proj img {
+    height: 25rem;
+    width: 48rem;
+    object-fit: cover;
+    margin-right: 2.7rem;
+    border: 0.2rem solid #9376E0;
+}
+
+.proj .proj-details {
+    width: 32rem;
+}
+
+.proj .proj-details i {
+    font-size: 1.5rem;
+    color: rgb(224, 214, 214);
+}
+
+.proj .proj-details h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.proj .proj-details p {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+}
+
+.proj .proj-details button {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin-top: 0.7rem;
+    margin-right: 1rem;
+    width: 150px;
+    border: none;
+}
+
+.proj-details button a {
+    text-decoration: none;
+    color: #070707;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+
+.proj-details button:hover {
+    background: #9376E0;
+}
+
+.proj-details button:hover a,
+.proj-details button:hover .fas {
+    color: #f0f0e6;
+}
+
+/* Contact Section */
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-section h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+form {
+    display: grid;
+    row-gap: 1rem;
+}
+
+form input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    background-color: #08081a;
+    color: white;
+    border-radius: 1rem;
+    resize: none;
+}
+
+.form .btn {
+    background-color: #8160db;
+    border: 0.1rem solid #8160db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.37s;
+}
+
+.form .btn:hover {
+    background-color: rgb(0, 0, 33);
+}
+
+/* Footer Section */
+
+.footer-section {
+    text-align: center;
+    background-color: #aa9dce;
+    padding: 2rem 10%;
+    font-size: 1rem;
+    line-height: 2.6;
+}
+
+.footer-section a {
+    color: rgb(36, 32, 32);
+    margin: 1rem 2rem;
+}
+
+/* Responsive section */
+
+@media (max-width:1238px) {
+    html {
+        font-size: 72%;
+    }
+}
+
+@media (max-width:806px) {
+
+    .proj {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .proj img {
+        height: 40%;
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .proj .proj-details {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .proj .proj-details button {
+        width: 120px;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width:767px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    .home-section img {
+        width: 40vw;
+    }
+
+    .home-section {
+        flex-direction: column;
+    }
+
+    .home-section img {
+        width: 60vw;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .skills-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:620px) {
+
+    .skills-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    header {
+        display: block;
+        padding: 0.2rem;
+    }
+
+    .menu-bar a {
+        margin-left: 2.1rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 58%;
+    }
+
+    .menu-bar a {
+        margin-left: 1.2rem;
+    }
+
+    .about-section p{
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #9376E0;
+  color: white;
+  padding: 0.5rem;
+}
+
+.navbar h1{
+  background-color: #9376E0;
+}
+
+.brand {
+  font-size: 2.5rem;
+  margin: 1rem auto 1rem auto;
+}
+
+.get-users {
+  display: flex;
+  background-color: #e451d8;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  margin: 1rem auto 1rem auto;
+  border-radius: 0 1rem 0 1rem;
+  border: 0.2rem solid #e451d8;
+  cursor: pointer;
+  transition: background-color 0.8s,transform 0.8s,border-radius 0.8s;
+}
+
+.get-users:hover,
+.get-users:focus {
+  background-color: transparent;
+  border-radius:1rem;
+  transform: translateY(-0.25rem);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 20px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+}
+
+.user-card img {
+  width: 100%;
+  transition: border 0.5s;
+}
+
+.user-card img:hover {
+  border: 1rem solid #9376E0;
+}
+
+.user-info {
+  padding: 1rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.user-info h4 {
+  margin-bottom: 0.7rem;
+  color: #9376E0;
+}
+
+@media (max-width:381px){
+  .brand{
+    font-size: 1.8rem;
+  }
+
+  .get-users {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Chatbot</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/0133f1bcd5.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        
+        <a class="navbar-brand" href="">ChatBot</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <h1 class="big-heading">Great workflow builder with features.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>
+            Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i
+              class="fa-brands fa-google-play"></i>
+            Download</button>
+        </div>
+
+        <div class="col-log-6 col-md-6 image-container">
+          <img class="title-image" src="images/logo.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4 col-md-4">
+          <i class="fa-solid fa-circle-check icon-color fa-4x"></i>
+          <h3 class="feature-title">Qualify</h3>
+          <p>Generate and qualify prospects automatically.</p>
+        </div>
+
+        <div class="feature-box col-lg-4 col-md-4">
+          <i class="fa-solid fa-bullseye icon-color fa-4x"></i>
+          <h3 class="feature-title">Time</h3>
+          <p>Research information and use accurate data in minimal time.</p>
+        </div>
+
+        <div class="feature-box col-lg-4 col-md-4">
+          <i class="fa-solid fa-heart icon-color fa-4x"></i>
+          <h3 class="feature-title">Easy</h3>
+          <p>Easy to set up and can answer customers questions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">ChatBot helps you to have human-like conversations with your clients and
+            customer.</h2>
+          <img class="testimonial-img" src="images/review_1.png" alt="review-profile">
+          <em>Ian, New York</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Easy to set up, beginner-friendly, good AI, easy to train, and has some cool
+            features.</h2>
+          <img class="testimonial-img" src="images/review_2.png" alt="review-profile">
+          <em>Christopher, Illinois</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">Goal-oriented pricing</h2>
+    <p>Try Team plan features for 14 days · No credit card required · No coding needed</p>
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Starter</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Free</h2>
+            <p>1 active chatbot</p>
+            <p>1,000 valid chats/mo</p>
+            <p>7-day training history</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="w-100 btn btn-lg btn-outline-dark">Sign up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Team</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$49 / mo</h2>
+            <p>5 active chatbots</p>
+            <p>5,000 valid chats/mo</p>
+            <p>Unlimited training history</p>
+            <p>Team collaboration</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="w-100 btn btn-lg btn-dark">Sign up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Enterprise</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$99 / mo</h2>
+            <p>Unlimited active chatbots</p>
+            <p>Custom chat package</p>
+            <p>Unlimited training history</p>
+            <p>Team collaboration</p>
+            <p>Premium customer support</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="w-100 btn btn-lg btn-dark">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+    <div class="container-fluid">
+
+
+      <h3 class="big-heading">Become our Partner and set up your clients' accounts in our Partner App.</h3>
+      <button type="button" class="download-button btn btn-lg btn-dark"><i class="fa-brands fa-apple"></i>
+        Download</button>
+      <button type="button" class="download-button btn btn-lg btn-light"><i class="fa-brands fa-google-play"></i>
+        Download</button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+
+      <i class="ft-logo fa-brands fa-twitter"></i>
+      <i class="ft-logo fa-brands fa-facebook-f"></i>
+      <i class="ft-logo fa-brands fa-instagram"></i>
+      <i class="ft-logo fa-solid fa-envelope"></i>
+      <p>© Copyright ChatBot</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
