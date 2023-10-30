@@ -1,3 +1,3 @@
 # Landing Page
 
-## Live Website -> https://landinge.netlify.app/
+### Live Website -> https://landinge.netlify.app/
