@@ -185,3 +185,9 @@ main {
 .btn-signing-main:hover {
     background-color: gray;
 }
+
+.robot-3d{
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
